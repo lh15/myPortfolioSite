@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Leibel Hecht Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <!--inspiration from http://briandelaney.me/ try to use paralax effect, use hide and show divs for mobile, ...-->
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <a  href=""><img class="brandLogoHidden"  src="LH3.png" alt="brandLogo"></a>
+        <div class="social">
+            <a href=""><i class="fa fa-twitter-square fa-1x" aria-hidden="true"></i><span>Twitter</span></a>
+            <a href=""><i class="fa fa-medium fa-1x" aria-hidden="true"></i><span>Medium</span></a>
+            <a href=""><i class="fa fa-envelope fa-1x" aria-hidden="true"></i><span>Email</span></a>
+            <a href=""><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></i><span>LinkedIn</span></a>
+            <a href=""><i class="fa fa-github fa-1x" aria-hidden="true"></i></i><span>GitHub</span></a>  
+        </div>
+        <h2>hey! I'm Leibel, and i'm</h2>
+        <div id="block"><div id="magic"></div></div>
+        <a href=""><img class="brandLogo" src="LH3.png" alt="brandLogo"></a>
+        <div class="navBar">
+            <a href="">
+                <img class="myPic" src="mypic.png" alt="">
+                <span>About Me</span>
+            </a>
+            <a href="">
+                <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
+                <span>Code Snippets</span>
+            </a>
+            <a href="">
+                <i class="fa fa-align-right fa-3x" aria-hidden="true"></i>
+                <span>Blog</span>
+            </a>
+            <a href="">
+                <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+                <span>Connect</span>
+            </a>
+        </div>
+        
+
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $("document").ready(function(){ 
+        $("a:has('.myPic')").mouseenter(function(){       
+            $(".myPic").attr('src','mypicwhite.png');      
+        });     
+        $("a:has('.myPic')").mouseleave(function(){       
+            $(".myPic").attr('src','mypic.png');      
+        }); 
+    });
+    var words = ["a\u00a0software\u00a0developer", "hard\u00a0working", "looking \u00a0to\u00a0explore"],
+			el = document.getElementById('magic'),
+			word_counter = 0,
+			character_counter = 0;
+
+		function updateText()
+		{
+			el.innerHTML = el.innerHTML+words[word_counter][character_counter++];
+            $(el).css("color", "blue");
+			if(character_counter == words[word_counter].length+1)
+			{
+				word_counter++; 	//choose a different word
+				character_counter = 0;	//start over with the first character of the word
+				el.innerHTML = '';  //set the html to be blank
+                
+				//if we're displaying the last word, go back to the first word
+				if(word_counter == words.length)
+					word_counter = 0;
+			}
+		}
+
+		setInterval(updateText,200);
+</script>
+</body>
+
+</html>
