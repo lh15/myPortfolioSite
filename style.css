@@ -1,182 +1,202 @@
-@font-face {
-  font-family: 'Gotham';
-  src:  url('Gotham-Bold.otf') format('opentype'),
-        url('Gotham-Bold.otf') format('opentype');
-}
-* { 
-    box-sizing: border-box; 
-    margin: 0px;
-    padding: 0px;
-    font-family: "Gotham";
-    font-size: 1.1em;
-    color: white;
-    
-}
-html{
-    height: 100%;
-}
-body{
-    /*background: #00C9FF;   fallback for old browsers */
-    /*background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);   Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgba(146, 254, 157,.7), rgba(0, 201, 255, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: url("computer-2242276_1920.jpg");
-    width: 100%;
-    /*height: 1000px;*/
-    background-size: cover;
-    background-attachment: fixed;
-    /*/*background-repeat: no-repeat;*/
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center; 
-    text-align: center;
-    height: 100%;
-}
-.navBar{
-    width: 90%;
-    text-align: center;
-    margin: 0px auto;
-}
-.navBar a {
-    
-    text-align: center;
-    display: inline-block;
-}
-#wrapper{
-    text-align: center;
-    padding: 2%;
-    /*margin: 30px auto;*/
-    width: 100%;
-    /*height: 100vh;*/
-    min-height:100%;
-    height:100%;
-    
-    background: rgba(0, 0, 0, .5);
-    /*background: linear-gradient(to bottom, rgba(146, 254, 157,.5), rgba(0, 201, 255, .6));*/
-    /*border-radius: 40px;*/
-    border: 2px solid rgba(0, 0, 0, .7);
-    border-bottom: 0px;
-}
-a {
-    text-align:center;
-    margin: 0px auto;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: 1%;
-}
-a span{
-    display:block;
+@import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
+* {
+  color: white;
 }
 
-.brandLogo{
-    width: 90%;
-    opacity: .3;
-    margin: 5% auto;
+.cursive, .cursive span {
+  font-family: 'Sue Ellen Francisco', cursive !important;
+  letter-spacing: 3px;
 }
-.brandLogo:hover{ 
-    opacity: 1;  
+
+html {
+  
 }
-.brandLogoHidden{
-    display: none;
+
+.bodyNoHover {
+  background-image: url("imageedit_18_6341848630.gif");
+  transition: 0.8s;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 100vh;
 }
-.navBar a{
-    margin: 0px 3%;
-    padding: 2%;
+
+.bodyHover {
+  background-image: url("pink.gif");
+  transition: 0.8s;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 100vh;
 }
+
+.bodyHover2 {
+  background-image: url("green.gif");
+  transition: 0.8s;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 100vh;
+}
+
+.navBar {
+  width: 90%;
+  text-align: center;
+  margin: 0px auto;
+  display: inline-block;
+}
+
+.navBar a {
+  text-align: center;
+  display: inline-block;
+}
+
+a {
+  text-align: center;
+  margin: 0px auto;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 1%;
+}
+
+a span {
+  display: block;
+  font-size: 180%
+}
+
+.brandLogo {
+  width: 40%;
+  opacity: .3;
+  margin: 5% auto;
+  display: inline-block;
+}
+
+.brandLogo:hover {
+  opacity: 1;
+}
+
+.brandLogoHidden {
+  display: none;
+}
+
+.navBar a {
+  margin: 0px 3%;
+  padding: 2%;
+}
+
 .social {
-    margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  display: inline-block;
+  text-align: center;
+  /*width: 35%;*/
 }
-/*.social a span{
-    opacity: 0;
-}*/
-.social a:hover{
-    opacity: 1;
-    color: white;
-    background: rgba(0, 0, 0, .6);
-    border-radius: 10px;
-    
+
+.social a {
+  margin: 0px 5px;
+  padding: 15px;
 }
-.social a span:hover{
-    opacity: 1;
-    color: white;
+
+.social a:hover {
+  opacity: 1;
+  color: white;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 15px;
 }
+
+.social a span:hover {
+  opacity: 1;
+  color: white;
+}
+
 .social a span {
-    font-size: .7em;
+  font-size: 120%;
+  text-align: center;
 }
+
+.social a i {
+  text-align: center;
+}
+
 .myPic {
-    width: 65px;
-    margin-bottom: -13px;
+  width: 65px;
+  margin-bottom: -13px;
 }
 
 .navBar a:hover {
-    color: white;
-    background: rgba(0, 0, 0, .6);
-    border-radius: 10px;
-    
+  color: white;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 10px;
 }
-#magic{
-    height: 30px;
-    line-height: 60px;
-    font-size: 2em;
-    border-right: 3px solid #777;
-    display: inline;
+
+.my_modals {
+  width: 100%;
+  height: 100vh;
+  background-image: url("imageedit_34_9067685704.gif");
+  background-size: cover;
+  background-position: center center;
 }
- #block{
-        display: block;
-    }
+
+.modal.open {
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  top: 0 !important;
+}
+
+.card p, .card .material-icons {
+  color: black !important;
+}
+
+#magic {
+  height: 30px;
+  line-height: 60px;
+  font-size: 2em;
+  border-right: 2px solid #7FDBFF;
+  display: inline;
+}
+
+#block {
+  display: block;
+}
+
 @media only screen and (max-width: 480px) {
-        .navBar a{
-        width: 50%;
-        margin: 3% auto;
-    }
-        .brandLogoHidden {
-            width: 50%;
-            opacity: 1;
-            margin: 5% auto;
-            display: block;
-        }
-        .brandLogo{display: none;}
-        .social a span{
-        opacity: 1;
-        color: black;
-    }
-    #magic{
-        
-        font-size: 1.4em;
-    }
-    #wrapper{ 
-    /*width: 85%;*/
-    /*margin: 15px auto;*/
-    /*min-height:100%;*/
-    height:200vh;
-    /*height: 100%;*/
-    }
-   
-    
-* { 
-    box-sizing: border-box; 
-    margin: 0px;
+  .brandLogoHidden {
+    width: 50%;
+    opacity: 1;
+    margin: 5% auto;
+    display: block;
+  }
+  .brandLogo {
+    display: none;
+  }
+  #magic {
+    font-size: 1.4em;
+  }
+  .navBar a {
+    display: block;
+  }
+  .social a {
+    margin: 0px 2px;
+    width: 13%;
+    text-align: center;
     padding: 0px;
-    font-family: "Gotham";
-    font-size: 1em;;
-    
+  }
+  .social{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .cursive, .cursive span{
+    letter-spacing: 0.7px;
+  }
+  .bodyNoHover{
+    height: 100%;
+  }
+  h2 {
+    margin-bottom: -5px !important;
+  }
 }
-}
-
-/*
-@media only screen and (min-width: 481px) {
-	.eight-m { width: 66.66666666%; }
-	.seven-m { width: 58.33333333%; }
-	.five-m { width: 41.66666666%; }
-	.four-m { width: 33.33333333%; }
-    .brandLogo {width: 10%;}
-}
-
-@media only screen and (min-width: 1024px) {
-	.eight-l { width: 66.66666666%; }
-	.four-l { width: 33.33333333%; }
-}
-*/
-
-
-

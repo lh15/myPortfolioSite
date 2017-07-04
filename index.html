@@ -2,83 +2,248 @@
 <html lang="en">
 
 <head>
-    <title>Leibel Hecht Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
-    <!--inspiration from http://briandelaney.me/ try to use paralax effect, use hide and show divs for mobile, ...-->
+  <title>Leibel Hecht Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <!--inspiration from http://briandelaney.me/ try to use paralax effect, use hide and show divs for mobile, ...-->
 </head>
 
-<body>
-
-    <div id="wrapper">
-        <a  href=""><img class="brandLogoHidden"  src="LH3.png" alt="brandLogo"></a>
-        <div class="social">
-            <a href=""><i class="fa fa-twitter-square fa-1x" aria-hidden="true"></i><span>Twitter</span></a>
-            <a href=""><i class="fa fa-medium fa-1x" aria-hidden="true"></i><span>Medium</span></a>
-            <a href=""><i class="fa fa-envelope fa-1x" aria-hidden="true"></i><span>Email</span></a>
-            <a href=""><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></i><span>LinkedIn</span></a>
-            <a href=""><i class="fa fa-github fa-1x" aria-hidden="true"></i></i><span>GitHub</span></a>  
-        </div>
-        <h2>hey! I'm Leibel, and i'm</h2>
-        <div id="block"><div id="magic"></div></div>
-        <a href=""><img class="brandLogo" src="LH3.png" alt="brandLogo"></a>
-        <div class="navBar">
-            <a href="">
+<body class="valign-wrapper bodyNoHover">
+  <div class="container" id="wrapper">
+    <a href=""><img class="brandLogoHidden"  src="LH3.png" alt="brandLogo"></a>
+    <div class="social cursive">
+      <a href="https://twitter.com/leibelhecht" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" ></i><span>Twitter</span></a>
+      <a href="https://medium.com/my-coding-dojo-experience" target="_blank"><i class="fa fa-medium fa-2x" aria-hidden="true"></i><span>Medium</span></a>
+      <a href="mailto:leibelhecht@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span>Email</span></a>
+      <a href="https://www.linkedin.com/in/leibel-hecht/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></i><span>LinkedIn</span></a>
+      <a href="https://github.com/lh15" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></i><span>GitHub</span></a>
+    </div>
+    <h2 class="">Hey! I'm Leibel, and I</h2>
+    <div id="block">
+      <div id="magic"></div>
+    </div>
+    <a href=""><img class="brandLogo" src="LH3.png" alt="brandLogo"></a>
+    <div class="navBar cursive">
+      <a href="#modal-about" class="col s12">
                 <img class="myPic" src="mypicwhite.png" alt="">
                 <span>About Me</span>
             </a>
-            <a href="">
+      <a href="#modal-work" class="col s12">
                 <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
-                <span>Code Snippets</span>
+                <span>My Work</span>
             </a>
-            <a href="">
+      <a href="https://medium.com/my-coding-dojo-experience" target="_blank" class="col s12">
                 <i class="fa fa-align-right fa-3x" aria-hidden="true"></i>
                 <span>Blog</span>
             </a>
-            <a href="">
-                <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+      <a href="#modal-connect" class="col s12">
+                <i class="fa fa-handshake-o fa-3x  " aria-hidden="true"></i>
                 <span>Connect</span>
             </a>
-        </div>
-        
-
-
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    $("document").ready(function(){ 
-        $("a:has('.myPic')").mouseenter(function(){       
-            $(".myPic").attr('src','mypicwhite.png');      
-        });     
-        $("a:has('.myPic')").mouseleave(function(){       
-            $(".myPic").attr('src','mypic.png');      
-        }); 
-    });
-    var words = ["a\u00a0software\u00a0developer", "hard\u00a0working", "looking \u00a0to\u00a0explore"],
-			el = document.getElementById('magic'),
-			word_counter = 0,
-			character_counter = 0;
+    <!--about me modal-->
+    <div id="modal-about" class="modal my_modals">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="large material-icons">close</i></a>
+      <div class="modal-content">
+        <h4>About me</h4>
+        <p>blah blah blah blah.</p>
+        <div class="row">
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal-work" class="modal my_modals">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="large material-icons">close</i></a>
+      <div class="modal-content">
+        <h4>Some of my work</h4>
+        <p>Here are some mini-apps that I built. Click to see more info about each project.</p>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card small sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imageedit_17_3407871656.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card small sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imageedit_17_3407871656.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card small sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imageedit_17_3407871656.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card small sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imageedit_17_3407871656.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card small sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imageedit_17_3407871656.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card small sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imageedit_17_3407871656.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
 
-		function updateText()
-		{
-			el.innerHTML = el.innerHTML+words[word_counter][character_counter++];
-            $(el).css("color", "blue");
-			if(character_counter == words[word_counter].length+1)
-			{
-				word_counter++; 	//choose a different word
-				character_counter = 0;	//start over with the first character of the word
-				el.innerHTML = '';  //set the html to be blank
-                
-				//if we're displaying the last word, go back to the first word
-				if(word_counter == words.length)
-					word_counter = 0;
-			}
-		}
+        </div>
+      </div>
+    </div>
+    <!--connect modal-->
+    <div id="modal-connect" class="modal my_modals">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="large material-icons">close</i></a>
+      <div class="modal-content">
+        <h4>Connect with me</h4>
+        <p>blah blah blah blah.</p>
+        <div class="row">
+        </div>
+      </div>
+    </div>
+    <script>
+      $("document").ready(function () {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
 
-		setInterval(updateText,200);
-</script>
+        // $("a:has('.myPic')").mouseenter(function () {
+        //     $(".myPic").attr('src', 'mypicwhite.png');
+        // });
+        // $("a:has('.myPic')").mouseleave(function () {
+        //     $(".myPic").attr('src', 'mypic.png');
+        // });
+        $(".social").hover(
+          function () {
+            $('body').addClass("bodyHover");
+            $('body').removeClass("bodyNoHover");
+          }, function () {
+            $('body').removeClass("bodyHover");
+            $('body').addClass("bodyNoHover");
+          }
+        );
+        $(".navBar a").hover(
+          function () {
+            $('body').addClass("bodyHover2");
+            $('body').removeClass("bodyNoHover");
+          }, function () {
+            $('body').removeClass("bodyHover2");
+            $('body').addClass("bodyNoHover");
+          }
+        );
+      });
+      var words = ["love solving problems", "am a software developer", "am hard working", "am available to join your team! :)  ", "am looking to explore"],
+        el = document.getElementById('magic'),
+        word_counter = 0,
+        character_counter = 0;
+
+      function updateText() {
+        var character = words[word_counter][character_counter++];
+        $(el).css("color", "#7FDBFF");
+
+        if (character === ' ') {
+          character = "&nbsp;" // use non-breaking space character
+        }
+        el.innerHTML = el.innerHTML + character;
+        if (character_counter == words[word_counter].length + 1) {
+          word_counter++; 	//choose a different word
+          character_counter = 0;	//start over with the first character of the word
+          el.innerHTML = '';	//set the html to be blank
+          //if we're displaying the last word, go back to the first word
+          if (word_counter == words.length)
+            word_counter = 0;
+        }
+      }
+
+      setInterval(updateText, 175);
+    </script>
 </body>
 
 </html>
