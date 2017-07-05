@@ -86,7 +86,6 @@ a span {
   display: none;
 }
 
-
 .social {
   margin-bottom: 45px;
   /*display: inline-block;*/
@@ -155,6 +154,10 @@ a span {
   font-size: .92em !important;
 }
 
+.card .card-content .card-title, .card .card-content .card-title i {
+  line-height: 18px !important;
+}
+
 .fa-2x {
   font-size: 2em !important;
 }
@@ -176,6 +179,15 @@ a span {
   border-radius: 220px;
   width: 15%;
   box-shadow: 0px 4px 50px black;
+}
+
+.clickImage {
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  opacity: .3;
+  font-size: 1.8em;
+  color: black;
 }
 
 .modal-close {
@@ -239,5 +251,14 @@ a span {
   }
   .card-image {
     max-height: 53% !important;
+  }
+  .clickImage {
+    position: absolute;
+    top: 45%;
+    left: 14%;
+    opacity: .6;
+    font-size: 1.7em;
+    opacity: .3;
+  color: black;
   }
 }
