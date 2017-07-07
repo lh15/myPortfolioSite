@@ -17,245 +17,260 @@
   <!--inspiration from http://briandelaney.me/ try to use paralax effect, use hide and show divs for mobile, ...-->
 </head>
 
-<body class="valign-wrapper bodyNoHover">
-  <div class="container" id="wrapper">
-    <a href=""><img class="brandLogoHidden"  src="./images/LH3.png" alt="brandLogo"></a>
-    <div class="social cursive">
-      <a href="https://twitter.com/leibelhecht" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" ></i><span>Twitter</span></a>
-      <a href="https://medium.com/@LeibelHecht" target="_blank"><i class="fa fa-medium fa-2x" aria-hidden="true"></i><span>Medium</span></a>
-      <a href="mailto:leibelhecht@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span>Email</span></a>
-      <a href="https://www.linkedin.com/in/leibel-hecht/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></i><span>LinkedIn</span></a>
-      <a href="https://github.com/lh15" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></i><span>GitHub</span></a>
-    </div>
-    <h2 class="">Hey! I'm Leibel, and I</h2>
-    <div id="block">
-      <div id="magic"></div>
-    </div>
-    <a href=""><img class="brandLogo" src="./images/LH3.png" alt="brandLogo"></a>
-    <div class="navBar cursive">
-      <a href="#modal-about" class="col s12">
+<body >
+  <div id="wrapper" class="valign-wrapper bodyNoHover">
+    <div class="container">
+      <a href=""><img class="brandLogoHidden"  src="./images/LH3.png" alt="brandLogo"></a>
+      <div class="social cursive">
+        <a href="https://twitter.com/leibelhecht" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" ></i><span>Twitter</span></a>
+        <a href="https://medium.com/@LeibelHecht" target="_blank"><i class="fa fa-medium fa-2x" aria-hidden="true"></i><span>Medium</span></a>
+        <a href="mailto:leibelhecht@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span>Email</span></a>
+        <a href="https://www.linkedin.com/in/leibel-hecht/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></i><span>LinkedIn</span></a>
+        <a href="https://github.com/lh15" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></i><span>GitHub</span></a>
+      </div>
+      <h2 class="">Hey! I'm Leibel, and I</h2>
+      <div id="block">
+        <div id="magic"></div>
+      </div>
+      <a href=""><img class="brandLogo" src="./images/LH3.png" alt="brandLogo"></a>
+      <div class="navBar cursive">
+        <a href="#modal-about" class="col s12">
                 <img class="myPic" src="./images/mypicwhite.png" alt="">
                 <span>About Me</span>
             </a>
-      <a href="#modal-work" class="col s12">
+        <a href="#modal-work" class="col s12">
                 <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
                 <span>My Work</span>
             </a>
-      <a href="https://medium.com/my-coding-dojo-experience" target="_blank" class="col s12">
+        <a href="https://medium.com/my-coding-dojo-experience" target="_blank" class="col s12">
                 <i class="fa fa-align-right fa-3x" aria-hidden="true"></i>
                 <span>Blog</span>
             </a>
-      <a href="#modal-connect" class="col s12">
+        <a href="#modal-connect" class="col s12">
                 <i class="fa fa-handshake-o fa-3x  " aria-hidden="true"></i>
                 <span>Connect</span>
             </a>
-    </div>
-    <!--about me modal-->
-    <div id="modal-about" class="modal my_modals ">
-      <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
-      <div class="modal-content">
-        <h2 class="cursive">I'm Leibel</h2>
-        <div class="row">
-          <img id="aboutPic" src="./images/FullSizeRender6.png" alt="profile pic">
-        </div>
-        <div class="aboutMe">
-          <div class="aboutMeP">
-            <p>I’m Leibel and I’m on a journey to transform my newfound passion for software development into a fulfilling career.</p>
-            <p>I enjoy creating great software and i especially appreciate beautiful design (I have a background in video production).</p>
+      </div>
+      <!--about me modal-->
+      <div id="modal-about" class="modal my_modals ">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        <div class="modal-content">
+          <h2 class="cursive">I'm Leibel</h2>
+          <div class="row">
+            <img id="aboutPic" src="./images/FullSizeRender6.png" alt="profile pic">
           </div>
-          <div class="aboutMeP">
-            <p>I love solving problems and always embrace an interesting challenge. Over the past several months I have built
-              some really cool and fun projects using Python with Django and Flask.</p>
-            <p>Most recently I built a few apps Using AngularJs as a front-end with nodeJs and MongoDb as my backend. Currently,
-              I am working on projects with Ruby and Rails. .</p>
-          </div>
+          <div class="aboutMe">
+            <div class="aboutMeP">
+              <p>I’m Leibel and I’m on a journey to transform my newfound passion for software development into a fulfilling
+                career.</p>
+              <p>I enjoy creating great software and i especially appreciate beautiful design (I have a background in video
+                production).</p>
+            </div>
+            <div class="aboutMeP">
+              <p>I love solving problems and always embrace an interesting challenge. Over the past several months I have built
+                some really cool and fun projects using Python with Django and Flask.</p>
+              <p>Most recently I built a few apps Using AngularJs as a front-end with nodeJs and MongoDb as my backend. Currently,
+                I am working on projects with Ruby and Rails. .</p>
+            </div>
 
-          <div class="divider"></div>
-        </div>
-        <br>
-        <div class="technologies">
-          <h4 class="cursive">Languages</h4>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div class="technologies">
-          <h4 class="cursive">Frameworks</h4>
-          <ul>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>AngularJS</li>
-            <li>Node.js</li>
-            <li>AngularJS</li>
-            <li>Express.js</li>
-            <li>Bootstrap</li>
-            <li>Materialize</li>
-            <li>Rails</li>
-          </ul>
-        </div>
-        <div class="technologies">
-          <h4 class="cursive">Databases</h4>
-          <ul>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Sqlite</li>
-          </ul>
-        </div>
-        <div class="technologies">
-          <h4 class="cursive">Web Services</h4>
-          <ul>
-            <li>AWS</li>
-            <li>Heroku</li>
-          </ul>
+            <div class="divider"></div>
+          </div>
+          <br>
+          <div class="technologies">
+            <h4 class="cursive">Languages</h4>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Ruby</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="technologies">
+            <h4 class="cursive">Frameworks</h4>
+            <ul>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>AngularJS</li>
+              <li>Node.js</li>
+              <li>AngularJS</li>
+              <li>Express.js</li>
+              <li>Bootstrap</li>
+              <li>Materialize</li>
+              <li>Rails</li>
+            </ul>
+          </div>
+          <div class="technologies">
+            <h4 class="cursive">Databases</h4>
+            <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Sqlite</li>
+            </ul>
+          </div>
+          <div class="technologies">
+            <h4 class="cursive">Web Services</h4>
+            <ul>
+              <li>AWS</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Modal Structure -->
-    <div id="modal-work" class="modal my_modals">
-      <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
-      <div class="modal-content">
-        <h2 class="cursive">Some of my work</h2>
-        <p>Here are some apps that I built. Click to see more info about each project.</p>
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="card small sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/slackLogin.png">
-                <span class="clickImage activator">Tap image for project info</span>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Smack Talk Messaging<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/lh15/smack/tree/heroku_2" target="_blank">GitHub Repo</a>
-                <a href="https://smack-talk-messaging.herokuapp.com/" target="_blank">Live App</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Smack Talk Messaging<i class="material-icons right">close</i></span>
-                <p class="cardInfo"><b>Stack: </b>MEAN: (NodeJs, Express, MongoDB AngularJS)</p>
-                <p class="cardInfo"><b>Dev Time: </b>1 week <b>Team: </b>Me, Armando Amador and Nick Delannoy</p>
-                <p>A Slack Messaging clone, created during project week at our bootcamp.</p>
-                <p>Create teams, channels, messages (with emojis!), invite to teams, channels and more. File upload in development</p>
-                <a href="https://medium.com/my-coding-dojo-experience/emojis-are-totally-mvp-3f21a31c9de4" target="_blank">Here is a blog post about the project</a>
-                <p><a href="https://vimeo.com/223993661">Smack Talk Messaging App</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                  on <a href="https://vimeo.com">Vimeo</a>.</p>
-                <iframe src="https://player.vimeo.com/video/223993661" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card small sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/weather_main.png">
-                <span class="clickImage activator">Tap image for project info</span>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Weather Mood Booster<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/lh15/weather-mood-booster" target="_blank">GitHub Repo</a>
-                <a href="https://weather-mood-booster.herokuapp.com/" target="_blank">Live App</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Weather Mood Booster<i class="material-icons right">close</i></span>
-                <p class="cardInfo"><b>Stack: </b>Python/Django: (Python, Django, Sqlite) APIs: Google Maps API with search and autocomplete,
-                  Open Weather Map API, a quotes api</p>
-                <p class="cardInfo"><b>Dev Time: </b>about 3 days <b>Team: </b>Sole Developer</p>
-                <p>App to put you in a better mood when its cloudy outside. Plus add friends and display their weather.</p>
-                <p>Displays funny quote and gif if its bad weather (currently only based on "sunny"), if the weather is good
-                  it displays a motivational quote and gif.</p>
-                <a href="https://medium.com/my-coding-dojo-experience/emojis-are-totally-mvp-3f21a31c9de4" target="_blank">Read more at this blog post about the project</a>
-                <p><a href="https://vimeo.com/220248537">Weather Mood Booster Demo</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                  on <a href="https://vimeo.com">Vimeo</a>.</p>
-                <iframe src="https://player.vimeo.com/video/220248537" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                  allowfullscreen></iframe>
+      <!-- Modal Structure -->
+      <div id="modal-work" class="modal my_modals">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        <div class="modal-content">
+          <h2 class="cursive">Some of my work</h2>
+          <p>Here are some apps that I built. Click to see more info about each project.</p>
+          <div class="divider"></div>
+          <h5 class="cursive">Found a bug? Please <a href="mailto:leibelhecht@gmail.com" target="_blank">let me know.</a> I would really appreciate
+            it
+          </h5>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card small sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/slackLogin.png">
+                  <span class="clickImage activator">Tap image for project info</span>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Smack Talk Messaging<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-action">
+                  <a href="https://smack-talk-messaging.herokuapp.com/" target="_blank">Try it!</a>
+                  <a href="https://github.com/lh15/smack/tree/heroku_2" target="_blank">GitHub</a>
+                  <a href="https://medium.com/my-coding-dojo-experience/emojis-are-totally-mvp-3f21a31c9de4" target="_blank">Article</a>
+                  <a href="https://vimeo.com/223993661" target="_blank">Demo</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Smack Talk Messaging<i class="material-icons right">close</i></span>
+                  <p class="cardInfo"><b>Stack: </b>MEAN: (NodeJs, Express, MongoDB AngularJS)</p>
+                  <p class="cardInfo"><b>Dev Time: </b>1 week <b>Team: </b>Me, Armando Amador and Nick Delannoy</p>
+                  <p>A Slack Messaging clone, created during project week at our bootcamp.</p>
+                  <p>Create teams, channels, messages (with emojis!), invite to teams, channels and more. File upload in development</p>
+                  <a href="https://medium.com/my-coding-dojo-experience/emojis-are-totally-mvp-3f21a31c9de4" target="_blank">Here is a blog post about the project</a>
+                  <p><a href="https://vimeo.com/223993661">Smack Talk Messaging App</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                    on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  <iframe src="https://player.vimeo.com/video/223993661" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card small sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/team_manager.png">
-                <span class="clickImage activator">Tap image for project info</span>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Team Management Dashboard<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/lh15/team-manager-MEAN" target="_blank">GitHub Repo</a>
-                <a href="https://team-manager-mean.herokuapp.com/" target="_blank">Live App</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Team Management<i class="material-icons right">close</i></span>
-                <p class="cardInfo"><b>Stack: </b>MEAN: (NodeJs, Express, MongoDB AngularJS)</p>
-                <p class="cardInfo"><b>Dev Time: </b>1 day <b>Team: </b>Sole Developer</p>
-                <p>Mini-app for a team manager to track status of players.</p>
-                <p>Add players, and update their status to playing or not. App asynchronously updates status from the database,
-                  and changes style to match.</p>
-                <a href="https://medium.com/my-coding-dojo-experience/sports-team-manager-dashboard-cef230826eca" target="_blank">Here is a blog post about the project</a>
-                <p><a href="https://vimeo.com/224589130">team-manager</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                  on <a href="https://vimeo.com">Vimeo</a>.</p>
-                <iframe src="https://player.vimeo.com/video/224589130" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card small sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/message-wall2.png">
-                <span class="clickImage activator">Tap image for project info</span>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Message Wall<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/lh15/the-wall-Django" target="_blank">GitHub Repo</a>
-                <a href="the-wall-django.herokuapp.com" target="_blank">Live App</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Message Wall<i class="material-icons right">close</i></span>
-                <p class="cardInfo"><b>Stack: </b>Python/Django: (Python, Django, Sqlite)</p>
-                <p class="cardInfo"><b>Dev Time: </b>1 day <b>Team: </b>Sole Developer</p>
-                <p>Message Wall where users can post messages and comment on messages. Users can only delete their own posts/comments.</p>
-                <p><a href="https://vimeo.com/224404063">the-wall-django</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                  on <a href="https://vimeo.com">Vimeo</a>.</p>
-                <iframe src="https://player.vimeo.com/video/224404063" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                  allowfullscreen></iframe>
+            <div class="col s12 m4">
+              <div class="card small sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/weather_main.png">
+                  <span class="clickImage activator">Tap image for project info</span>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Weather Mood Booster<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-action">
+                  <a href="https://weather-mood-booster.herokuapp.com/" target="_blank">Try it!</a>
+                  <a href="https://github.com/lh15/weather-mood-booster" target="_blank">GitHub</a>
+                  <a href="https://medium.com/my-coding-dojo-experience/weather-mood-booster-app-yes-i-made-an-app-d144b8992147" target="_blank">Article</a>
+                  <a href="https://vimeo.com/220248537" target="_blank">Demo</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Weather Mood Booster<i class="material-icons right">close</i></span>
+                  <p class="cardInfo"><b>Stack: </b>Python/Django: (Python, Django, Sqlite) APIs: Google Maps API with search and autocomplete,
+                    Open Weather Map API, a quotes api</p>
+                  <p class="cardInfo"><b>Dev Time: </b>about 3 days <b>Team: </b>Sole Developer</p>
+                  <p>App to put you in a better mood when its cloudy outside. Plus add friends and display their weather.</p>
+                  <p>Displays funny quote and gif if its bad weather (currently only based on "sunny"), if the weather is good
+                    it displays a motivational quote and gif.</p>
+                  <a href="https://medium.com/my-coding-dojo-experience/weather-mood-booster-app-yes-i-made-an-app-d144b8992147" target="_blank">Read more at this blog post about the project</a>
+                  <p><a href="https://vimeo.com/220248537">Weather Mood Booster Demo</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                    on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  <iframe src="https://player.vimeo.com/video/220248537" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card small sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/book-reviewer.png">
-                <span class="clickImage activator">Tap image for project info</span>
+            <div class="col s12 m4">
+              <div class="card small sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/team_manager.png">
+                  <span class="clickImage activator">Tap image for project info</span>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Team Management Dashboard<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-action">
+                  <a href="https://team-manager-mean.herokuapp.com/" target="_blank">Try it!</a>
+                  <a href="https://github.com/lh15/team-manager-MEAN" target="_blank">GitHub</a>
+                  <a href="https://medium.com/my-coding-dojo-experience/sports-team-manager-dashboard-cef230826eca" target="_blank">Article</a>
+                  <a href="https://vimeo.com/224589130" target="_blank">Demo</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Team Management<i class="material-icons right">close</i></span>
+                  <p class="cardInfo"><b>Stack: </b>MEAN: (NodeJs, Express, MongoDB AngularJS)</p>
+                  <p class="cardInfo"><b>Dev Time: </b>1 day <b>Team: </b>Sole Developer</p>
+                  <p>Mini-app for a team manager to track status of players.</p>
+                  <p>Add players, and update their status to playing or not. App asynchronously updates status from the database,
+                    and changes style to match.</p>
+                  <a href="https://medium.com/my-coding-dojo-experience/sports-team-manager-dashboard-cef230826eca" target="_blank">Here is a blog post about the project</a>
+                  <p><a href="https://vimeo.com/224589130">team-manager</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                    on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  <iframe src="https://player.vimeo.com/video/224589130" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card small sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/message-wall2.png">
+                  <span class="clickImage activator">Tap image for project info</span>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Message Wall<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-action">
+                  <a href="https://the-wall-django.herokuapp.com/" target="_blank">Try it!</a>
+                  <a href="https://github.com/lh15/the-wall-Django" target="_blank">GitHub</a>
+                  <a href="https://vimeo.com/224404063" target="_blank">Demo</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Message Wall<i class="material-icons right">close</i></span>
+                  <p class="cardInfo"><b>Stack: </b>Python/Django: (Python, Django, Sqlite)</p>
+                  <p class="cardInfo"><b>Dev Time: </b>1 day <b>Team: </b>Sole Developer</p>
+                  <p>Message Wall where users can post messages and comment on messages. Users can only delete their own posts/comments.</p>
+                  <p><a href="https://vimeo.com/224404063">the-wall-django</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                    on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  <iframe src="https://player.vimeo.com/video/224404063" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card small sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/book-reviewer.png">
+                  <span class="clickImage activator">Tap image for project info</span>
 
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Book Reviewer<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/lh15/book_reviewer_Django" target="_blank">GitHub Repo</a>
-                <a href="https://book-reviewer-django.herokuapp.com" target="_blank">Live App</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Book Reviewer<i class="material-icons right">close</i></span>
-                <p class="cardInfo"><b>Stack: </b>Python/Django: (Python, Django, Sqlite)</p>
-                <p class="cardInfo"><b>Dev Time: </b>4.5 hours including deployement to AWS<b>Team: </b>Sole Developer</p>
-                <p>App where users can add books and reviews etc. Build for the belt exam which has a 4.5hr limit including
-                  deployement to AWS</p>
-                <p><a href="https://vimeo.com/224407982">book-reviewer</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                  on <a href="https://vimeo.com">Vimeo</a>.</p>
-                <iframe src="https://player.vimeo.com/video/224407982" width="100%" height="297" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                  allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Book Reviewer<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-action">
+                  <a href="https://book-reviewer-django.herokuapp.com" target="_blank">Try it!</a>
+                  <a href="https://github.com/lh15/book_reviewer_Django" target="_blank">GitHub</a>
+                  <a href="https://vimeo.com/224407982" target="_blank">Demo</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Book Reviewer<i class="material-icons right">close</i></span>
+                  <p class="cardInfo"><b>Stack: </b>Python/Django: (Python, Django, Sqlite)</p>
+                  <p class="cardInfo"><b>Dev Time: </b>4.5 hours including deployement to AWS<b>Team: </b>Sole Developer</p>
+                  <p>App where users can add books and reviews etc. Build for the belt exam which has a 4.5hr limit including
+                    deployement to AWS</p>
+                  <p><a href="https://vimeo.com/224407982">book-reviewer</a> from <a href="https://vimeo.com/user34509603">Leibel</a>                    on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  <iframe src="https://player.vimeo.com/video/224407982" width="100%" height="297" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col s12 m4">
-            <h5 class="cursive sitTight">More projects being deployed. Sit tight :)</h5>
-            <!--<div class="card small sticky-action">
+            <div class="col s12 m4">
+              <h5 class="cursive sitTight">More projects being deployed. Sit tight :)</h5>
+              <!--<div class="card small sticky-action">
               <!--<div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="./images/imageedit_17_3407871656.gif">
                 <span class="clickImage activator">Tap image for project info</span>
@@ -271,46 +286,73 @@
                 <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
               </div>-->
-            <!--</div>-->
-          </div>
+              <!--</div>-->
+            </div>
 
+          </div>
+        </div>
+      </div>
+      <!--connect modal-->
+      <div id="modal-connect" class="modal my_modals">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        <div class="modal-content" id="modal-connect-content">
+          <h2 class="cursive">Say hi!</h2>
+          <p>If you have any questions, comments, feedback or just want to say hi, I'd love to hear from you.</p>
+          <p>I'm also available for hire, and would love to hear about opportunities to put my skills to work.</p>
+          <p><a href="https://www.linkedin.com/in/leibel-hecht/" target="_blank">LinkedIn</a></p>
+          <p><a href="https://twitter.com/leibelhecht" target="_blank">Twitter</a></p>
+          <p><a href="mailto:leibelhecht@gmail.com" target="_blank">Email</a></p>
+          <p><a href="https://medium.com/@LeibelHecht" target="_blank">Medium</a></p>
+          <p><a href="https://github.com/lh15" target="_blank">GitHub</a></p>
+          <hr class="style14">
+          <div id="favLinks">
+            <h4 class="cursive">Fancy a read? Here are a few posts from my blog</h4>
+            <ul>
+              <li>About the Slack clone that we built -<a href="https://medium.com/my-coding-dojo-experience/emojis-are-totally-mvp-3f21a31c9de4"
+                  target="_blank">"Emojis are totally MVP"</a></li>
+              <li>About the weather mood booster app -<a href="https://medium.com/my-coding-dojo-experience/weather-mood-booster-app-yes-i-made-an-app-d144b8992147"
+                  target="_blank">"I made an app!"</a></li>
+              <li>Mini Data Science/Analysis project -<a href="https://medium.com/my-coding-dojo-experience/chat-rooms-and-a-mini-data-science-project-mean-day-4-c7f08a31b196"
+                  target="_blank">"Chat Rooms and a mini Data Science project"</a></li>
+              <li>Article about recursion with an analogy -<a href="https://medium.com/my-coding-dojo-experience/please-please-no-more-factorial-8ff816cd46df"
+                  target="_blank">"Please please, stop with factorials!"</a></li>
+              <li>Article about my background -<a href="https://medium.com/my-coding-dojo-experience/so-its-been-a-week-plus-my-background-19045101d87e"
+                  target="_blank">"So its been a week…"</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <!--connect modal-->
-    <div id="modal-connect" class="modal my_modals">
-      <a href="#!" class="modal-action modal-close waves-effect btn-flat"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
-      <div class="modal-content" id="modal-connect-content">
-        <h2 class="cursive">Say hi!</h2>
-        <p>If you have any questions, comments, feedback or just want to say hi, I'd love to hear from you.</p>
-        <p>I'm also available for hire, and would love to hear about opportunities to put my skills to work.</p>
-        <p><a href="https://www.linkedin.com/in/leibel-hecht/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://twitter.com/leibelhecht" target="_blank">Twitter</a></p>
-        <p><a href="mailto:leibelhecht@gmail.com" target="_blank">Email</a></p>
-        <p><a href="https://medium.com/@LeibelHecht" target="_blank">Medium</a></p>
-        <p><a href="https://github.com/lh15" target="_blank">GitHub</a></p>
-        <hr class="style14">
-        <div id="favLinks">
-          <h4 class="cursive">Fancy a read? Here are a few posts from my blog</h4>
-          <ul>
-            <li>About the Slack clone that we built -<a href="https://medium.com/my-coding-dojo-experience/emojis-are-totally-mvp-3f21a31c9de4"
-                target="_blank">"Emojis are totally MVP"</a></li>
-            <li>About the weather mood booster app -<a href="https://medium.com/my-coding-dojo-experience/weather-mood-booster-app-yes-i-made-an-app-d144b8992147"
-                target="_blank">"I made an app!"</a></li>
-            <li>Mini Data Science/Analysis project -<a href="https://medium.com/my-coding-dojo-experience/chat-rooms-and-a-mini-data-science-project-mean-day-4-c7f08a31b196"
-                target="_blank">"Chat Rooms and a mini Data Science project"</a></li>
-            <li>Article about recursion with an analogy -<a href="https://medium.com/my-coding-dojo-experience/please-please-no-more-factorial-8ff816cd46df"
-                target="_blank">"Please please, stop with factorials!"</a></li>
-            <li>Article about my background -<a href="https://medium.com/my-coding-dojo-experience/so-its-been-a-week-plus-my-background-19045101d87e"
-                target="_blank">"So its been a week…"</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
     <script>
       $("document").ready(function () {
+
+        $('#wrapper').fadeIn("slow");
+        $.preloadImages = function () {
+          for (var i = 0; i < arguments.length; i++) {
+            $("<img />").attr("src", arguments[i]);
+          }
+        }
+        $.preloadImages("./images/imageedit_18_6341848630.gif", "./images/pink.gif", "./images/green.gif", "./images/imageedit_34_9067685704.gif");
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal').modal();
+
+        var urls = ["https://smack-talk-messaging.herokuapp.com", "https://weather-mood-booster.herokuapp.com", "https://team-manager-mean.herokuapp.com", "https://the-wall-django.herokuapp.com", "https://book-reviewer-django.herokuapp.com"];
+        for (var i = 0; i < urls.length; i++) {
+          $.ajaxPrefilter(function (options) {
+            if (options.crossDomain && jQuery.support.cors) {
+              var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+              options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+              //options.url = "http://cors.corsproxy.io/url=" + options.url;
+            }
+          });
+          $.get(
+            urls[i],
+            function (response) {
+              // console.log("got response from ", response);
+            });
+        }
+
 
         // $("a:has('.myPic')").mouseenter(function () {
         //     $(".myPic").attr('src', 'mypicwhite.png');
@@ -320,24 +362,43 @@
         // });
         $(".social a").hover(
           function () {
-            $('body').addClass("bodyHover");
+            $('#wrapper').addClass("bodyHover");
             // $('body').removeClass("bodyNoHover");
           }, function () {
             // $('body').addClass("bodyNoHover");
-            $('body').removeClass("bodyHover");
+            $('#wrapper').removeClass("bodyHover");
 
           }
         );
         $(".navBar a").hover(
           function () {
-            $('body').addClass("bodyHover2");
+            $('#wrapper').addClass("bodyHover2");
             // $('body').removeClass("bodyNoHover");
           }, function () {
             // $('body').addClass("bodyNoHover");
-            $('body').removeClass("bodyHover2");
+            $('#wrapper').removeClass("bodyHover2");
 
           }
         );
+
+        function updateCart(qty, rowid) {
+          $('.loaderImage').show();
+          $.ajax({
+            type: "POST",
+            url: "/cart/ajax_update_item",
+            data: { rowid: rowid, qty: qty },
+            dataType: 'json',
+            success: function (data) {
+              render_cart(data);
+              $('.loaderImage').hide();
+            },
+            error: function (response) {
+              //Handle error
+              $("#progressBar").hide();
+
+            }
+          });
+        }
       });
       var words = ["love solving problems", "am a software developer", "am hard working", "am available to join your team! :)  ", "am looking to explore"],
         el = document.getElementById('magic'),

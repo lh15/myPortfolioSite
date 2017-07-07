@@ -6,11 +6,19 @@
 
 .cursive, .cursive span {
   font-family: 'Sue Ellen Francisco', cursive !important;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
-html {}
-
+html {
+  
+}
+body{
+  background: #174675
+}
+#wrapper { 
+  display: none;
+  padding-top: 4%;
+}
 .bodyNoHover {
   background-image: url("./images/imageedit_18_6341848630.gif");
   transition: background-image .7s;
@@ -86,6 +94,9 @@ a span {
 .brandLogoHidden {
   display: none;
 }
+.hidden{
+  display: none;
+}
 
 .social {
   margin-bottom: 45px;
@@ -153,6 +164,28 @@ a span {
 .card, .card-action {
   text-align: left !important;
   font-size: .92em !important;
+}
+
+.card .card-action a {
+  color: #412356 !important;
+  font-weight: 700 !important;
+  padding: 5px;
+  border: 2px solid #412356 ;
+  border-radius: 3px;
+  margin-right: 5px !important;
+  font-size: smaller;
+}
+
+.card .card-action a:hover {
+  background: #412356;
+  color: white !important;
+  padding: 5px !important;
+  border: 2px solid #412356 ;
+  border-radius: 3px;
+}
+.fa-spinner{
+  color: #412356 !important;
+  font-size: 1.3em;
 }
 
 .card .card-content .card-title, .card .card-content .card-title i {
@@ -225,6 +258,26 @@ a span {
 #modal-connect h2, #modal-connect h4, #modal-about h2 {
   margin: 25px auto;
 }
+.modal-content .divider {
+  width: 45%;
+  margin: 2px auto
+}
+.modal-content a {
+  color: lightgreen;
+  padding: 1% 0px;
+  font-weight: 400;
+  border: 3px solid transparent;
+}
+.modal-content a:hover {
+  color: white ;
+  font-weight: 700 ;
+  padding: 1% 10px !important;
+  border: 3px solid white;
+  border-radius: 3px;
+  background: #412356;
+  transition: .4s;
+}
+
 
 .aboutMeP {
   display: inline-block;
