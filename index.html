@@ -17,7 +17,7 @@
   <!--inspiration from http://briandelaney.me/ try to use paralax effect, use hide and show divs for mobile, ...-->
 </head>
 
-<body >
+<body>
   <div id="wrapper" class="valign-wrapper bodyNoHover">
     <div class="container">
       <a href=""><img class="brandLogoHidden"  src="./images/LH3.png" alt="brandLogo"></a>
@@ -62,9 +62,11 @@
           <div class="aboutMe">
             <div class="aboutMeP">
               <p>I’m Leibel and I’m on a journey to transform my newfound passion for software development into a fulfilling
-                career.</p>
+                career.
+              </p>
               <p>I enjoy creating great software and i especially appreciate beautiful design (I have a background in video
-                production).</p>
+                production).
+              </p>
             </div>
             <div class="aboutMeP">
               <p>I love solving problems and always embrace an interesting challenge. Over the past several months I have built
@@ -380,25 +382,6 @@
 
           }
         );
-
-        function updateCart(qty, rowid) {
-          $('.loaderImage').show();
-          $.ajax({
-            type: "POST",
-            url: "/cart/ajax_update_item",
-            data: { rowid: rowid, qty: qty },
-            dataType: 'json',
-            success: function (data) {
-              render_cart(data);
-              $('.loaderImage').hide();
-            },
-            error: function (response) {
-              //Handle error
-              $("#progressBar").hide();
-
-            }
-          });
-        }
       });
       var words = ["love solving problems", "am a software developer", "am hard working", "am available to join your team! :)  ", "am looking to explore"],
         el = document.getElementById('magic'),
