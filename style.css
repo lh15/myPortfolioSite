@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
 * {
   color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 .cursive, .cursive span {
@@ -177,7 +178,7 @@ a span {
 #aboutPic {
   /* border: 3px solid lightslategray; */
   border-radius: 220px;
-  width: 15%;
+  width: 12.5%;
   box-shadow: 0px 4px 50px black;
 }
 
@@ -192,6 +193,77 @@ a span {
 
 .modal-close {
   margin-top: 15px;
+}
+
+.cardInfo, .cardInfo b {
+  color: black !important;
+  margin: 4px 0px;
+}
+
+.aboutMe {
+  font-size: 1.4em;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center
+}
+
+#modal-connect .modal-content {
+  font-weight: 300;
+  width: 40%;
+  margin: 0px auto;
+}
+
+#modal-connect-content {
+  font-size: larger;
+}
+
+#favLinks a {
+  display: block;
+  font-style: italic;
+}
+
+#modal-connect h2, #modal-connect h4, #modal-about h2 {
+  margin: 25px auto;
+}
+
+.aboutMeP {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  text-align: left;
+  /*margin: 0 0 20px 0;*/
+  font-size: 16px;
+  font-weight: 300;
+}
+
+hr.style14 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  margin: 4px auto;
+  width: 70%
+}
+
+.technologies {
+  display: inline-block;
+  vertical-align: top;
+  width: 175px;
+}
+
+.technologies h4 {
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+.sitTight {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  line-height: 258px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -259,6 +331,18 @@ a span {
     opacity: .6;
     font-size: 1.7em;
     opacity: .3;
-  color: black;
+    color: black;
+  }
+  #modal-connect .modal-content {
+    font-weight: 300;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .modal-content h2 {
+    margin-bottom: 25px !important;
+  }
+  .aboutMeP {
+    width: 80%;
+    text-align: center;
   }
 }
