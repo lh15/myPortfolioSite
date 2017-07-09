@@ -398,4 +398,8 @@ hr.style14 {
     width: 80%;
     text-align: center;
   }
+  .card .card-title {
+    font-size: 13px;
+    font-weight: 400;
+}
 }
