@@ -399,7 +399,7 @@ hr.style14 {
     text-align: center;
   }
   .card .card-title {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 13px !important;
+    font-weight: 400 !important;
 }
 }
