@@ -437,7 +437,7 @@
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal').modal();
 
-        var urls = ["https://smack-talk-messaging.herokuapp.com", "https://weather-mood-booster.herokuapp.com", "https://team-manager-mean.herokuapp.com", "https://the-wall-django.herokuapp.com", "https://book-reviewer-django.herokuapp.com", "https://trivia-game-mean.herokuapp.com", "https://http://dr-appointments.herokuapp.com"];
+        var urls = ["https://smack-talk-messaging.herokuapp.com", "https://weather-mood-booster.herokuapp.com", "https://team-manager-mean.herokuapp.com", "https://the-wall-django.herokuapp.com", "https://book-reviewer-django.herokuapp.com", "https://trivia-game-mean.herokuapp.com", "https://dr-appointments.herokuapp.com"];
         for (var i = 0; i < urls.length; i++) {
           $.ajaxPrefilter(function (options) {
             if (options.crossDomain && jQuery.support.cors) {
