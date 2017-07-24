@@ -191,6 +191,11 @@ a span {
 .card .card-content .card-title, .card .card-content .card-title i {
   line-height: 18px !important;
 }
+.card .card-title {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    
+}
 
 .fa-2x {
   font-size: 2em !important;
